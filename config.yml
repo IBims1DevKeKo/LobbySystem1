@@ -1,0 +1,323 @@
+tab:
+  header: '&8(&cServernetzwerk.de&8)'
+  footer: '&eDas ist der Footer!'
+enable:
+  gadgets: true
+  profil: true
+  lobbyswitcher: false
+customitem:
+  enable: false
+  id: 360
+  displayname: "\xa76CustomItem \xa78\xd7 \xa77Rechtsklick"
+  command: "say %player% hat gerade den CustomItem-Command ausgel\xf6st!"
+itemid:
+  compass: 399
+  playerhider: 54
+  rankhider: 359
+  flymode: 288
+  nogadget: 337
+lobbyswitcher:
+  server1:
+    enable: true
+    name: Lobby1
+    this: true
+  server2:
+    enable: true
+    name: Lobby2
+    this: false
+  server3:
+    enable: true
+    name: Lobby3
+    this: false
+  server4:
+    enable: true
+    name: Lobby4
+    this: false
+  silenthub:
+    enable: true
+    name: SilentHub
+    this: false
+mysql:
+  host: localhost
+  user: root
+  database: database
+  password: password
+servername: dein-server.de
+teamspeak: ts.dein-server.de
+prefix: ' &4&lX &e&lS&6ky&e&lF&6lamme&7.&dde '
+noperms: "&cDu hast nicht die ben\xf6tigten Rechte!"
+staffjoinbroadcastmsg: "&7Das Teammitglied \xa7c%name% \xa77ist dem Server beigetreten!"
+gm:
+  '0':
+    self: '&7Du bist nun im GameMode &6Survival'
+    other: '&7Der Spieler %player% &7ist nun im GameMode &6Survival'
+  '1':
+    self: '&7Du bist nun im GameMode &6Creative'
+    other: '&7Der Spieler %player% &7ist nun im GameMode &6Creative'
+  '2':
+    self: '&7Du bist nun im GameMode &6Adventure'
+    other: '&7Der Spieler %player% &7ist nun im GameMode &6Adventure'
+  '3':
+    self: '&7Du bist nun im GameMode &6Spectator'
+    other: '&7Der Spieler %player% &7ist nun im GameMode &6Spectator'
+  unknown: '&6Syntax: &7/gamemode <1/2/3> <Spieler>'
+  incorrect: '&cDieser Spieler konnte nicht gefunden werden!'
+msg:
+  ts: "&7Unser TeamSpeak Server: \xa7edeine-ip.de"
+  website: "&7Unsere Website: \xa7edeine-website.de"
+  shop: "&7Unser Shop: \xa7edein-shop.de"
+  youtube: "&7Voraussetzungen zum &5YouTuber&7: \xa7edein-forum.de"
+buildmode:
+  activate:
+    self: '&7Du kannst nun bauen!'
+    other: '&7%player% &7kann nun bauen!'
+  deactivate:
+    self: '&7Du kannst nun nicht mehr bauen!'
+    other: '&7%player% &7kann nun nicht mehr bauen!'
+fly:
+  activate:
+    self: '&7Du kannst nun fliegen!'
+    other: '&7%player% &7kann nun fliegen!'
+  deactivate:
+    self: '&7Du kannst nun nicht mehr fliegen!'
+    other: '&7%player% &7kann nun nicht mehr fliegen!'
+warp:
+  success: '&7Du bist nun bei &c%warp%'
+  failed: '&cDieser Warp existiert nicht!'
+  unknown: '&6Syntax: &7/warp <Name>'
+spawn:
+  success: '&7Du wurdest zum Spawn teleportiert!'
+  failed: '&cDer Spawn wurde noch nicht gesetzt!'
+player:
+  hide:
+    all: '&7Dir werden nun alle Spieler angezeigt'
+    vip: '&7Dir werden nun alle VIP Spieler angezeigt'
+    'no': '&7Dir werden nun keine Spieler angezeigt'
+weather:
+  sun: '&7Das Wetter wurde zu sonnig umgestellt'
+  rain: '&7Das Wetter wurde zu regen umgestellt'
+  unknown: '&6Syntax: &7/weather <sun/rain>'
+time:
+  day: '&7Die Zeit wurde zu Tag gesetzt'
+  night: '&7Die Zeit wurde zu Nacht gesetzt'
+  unknown: '&6Syntax: &7/time <day/night>'
+nick:
+  an: "&7Dein NickName wurde \xa7aaktiviert"
+  aus: "&7Dein NickName wurde \xa7cdeaktiviert"
+  unknown: '&6Syntax: &7/nick <an/aus>'
+togglerang:
+  an: '&7Du wirst nun als &8Spieler &7angezeigt!'
+  aus: '&7Du wirst nun nicht mehr als &8Spieler &7angezeigt!'
+setgroup:
+  set: '&7Der Rang von &6%player% &7wurde auf &e%rank% &7gesetzt'
+  unknown: '&6Syntax: &7/setgroup <Spieler> <Rang>'
+  kickmsg: '&7Dein Neuer Rang: &e%rank%'
+tp:
+  self: '&7Du wurdest zu %target% &7teleportiert'
+  other: '&7Der Spieler %player% &7wurde zu %target% &7teleportiert'
+  unknown: "\xa76Syntax: &7/tp <Spieler> <Spieler>"
+gadget:
+  gadget: "&7Du hast das Gadget &e%gadget% &7ausgew\xe4hlt"
+automsg:
+  toggle: true
+  '1': '&eAutomessage 1'
+  '2': '&eAutomessage 2'
+  '3': '&eAutomessage 3'
+  '4': '&eAutomessage 4'
+compass:
+  item1:
+    id: 404
+    name: '&4&lSpawn'
+    warp: spawn
+    enabled: true
+  item2:
+    id: 355
+    name: '&4&lBed&f&lWars'
+    warp: bw
+    enabled: true
+  item3:
+    id: 166
+    name: '&4&lGeheim!'
+    warp: geh
+    enabled: true
+  item4:
+    id: 111
+    name: '&2FreeBuild'
+    warp: freebuild
+    enabled: true
+  item5:
+    id: 131
+    name: '&6Warp5'
+    warp: Warp5
+    enabled: false
+  item6:
+    id: 346
+    name: '&4&lSG&6&lFFA'
+    warp: sgffa
+    enabled: true
+  item7:
+    id: 131
+    name: '&6Warp7'
+    warp: Warp7
+    enabled: false
+  item8:
+    id: 54
+    name: '&d&lChest&b&lOpening'
+    warp: co
+    enabled: true
+  item9:
+    id: 131
+    name: '&6Warp9'
+    warp: Warp9
+    enabled: false
+  item10:
+    id: 133
+    name: '&aEmerald&fWars'
+    warp: ef
+    enabled: true
+  item11:
+    id: 131
+    name: '&6Warp11'
+    warp: Warp11
+    enabled: false
+  item12:
+    id: 131
+    name: '&6Warp12'
+    warp: Warp12
+    enabled: false
+  item13:
+    id: 122
+    name: '&bEggWars'
+    warp: eg
+    enabled: true
+  item14:
+    id: 131
+    name: '&6Warp14'
+    warp: Warp14
+    enabled: false
+skull:
+  '1':
+    name: '&4Owner EmgaTV'
+    player: EmGaTV
+  '2':
+    name: '&cKopf 2'
+    player: Serverleiter
+  '3':
+    name: '&cKopf 3'
+    player: Serverleiter
+  '4':
+    name: '&cKopf 4'
+    player: Serverleiter
+  '5':
+    name: '&cKopf 5'
+    player: Serverleiter
+  '6':
+    name: '&cKopf 6'
+    player: Serverleiter
+  '7':
+    name: '&cKopf 7'
+    player: Serverleiter
+  '8':
+    name: '&5GommeHD'
+    player: GommeHD
+  '9':
+    name: '&5Paluten'
+    player: Paluten
+  '10':
+    name: '&5rewinside'
+    player: rewinside
+  '11':
+    name: '&5Alphastein'
+    player: Alphastein
+  '12':
+    name: '&5AviveHD'
+    player: AviveHD
+  '13':
+    name: '&5Fazon'
+    player: Fazon
+  '14':
+    name: '&5ungespielt'
+    player: ungespielt
+  '15':
+    name: '&8[&3SOON&8]'
+    player: MHF_Question
+  '16':
+    name: '&8[&3SOON&8]'
+    player: MHF_Question
+  '17':
+    name: '&8[&3SOON&8]'
+    player: MHF_Question
+  '18':
+    name: '&8[&3SOON&8]'
+    player: MHF_Question
+  '19':
+    name: '&8[&3SOON&8]'
+    player: MHF_Question
+  '20':
+    name: '&8[&3SOON&8]'
+    player: MHF_Question
+  '21':
+    name: '&8[&3SOON&8]'
+    player: MHF_Question
+rank:
+  admin:
+    tab: '&4A'
+    chat: '&4Admin'
+  dev:
+    tab: '&bD'
+    chat: '&bDev'
+  srmod:
+    tab: '&cSM'
+    chat: '&cSrMod'
+  mod:
+    tab: '&cM'
+    chat: '&cMod'
+  supporter:
+    tab: '&aS'
+    chat: '&aSupport'
+  builder:
+    tab: '&9B'
+    chat: '&9BauTeam'
+  youtuber:
+    tab: '&5YT'
+    chat: '&5YouTube'
+  miniyoutuber:
+    tab: '&5MYT'
+    chat: '&5MiniYouTube'
+  ultimate:
+    tab: '&bULTIMATE'
+    chat: '&bULTIMATE'
+  elite:
+    tab: '&6ELITE'
+    chat: '&6ELITE'
+  plus:
+    tab: '&3PLUS'
+    chat: '&3PLUS'
+  spieler:
+    tab: '&eS'
+    chat: '&eSpieler'
+friends:
+  enable: true
+  command: friendsgui
+help:
+  '1': '&8&m-------&7[&6Hilfe&7]&8&m-------'
+  '2': '&3&lCommands:'
+  '3': '&c/help &7- &eZeige diese Hilfeseite'
+  '4': '&c/friends &7- &eZeige deine Freunde an'
+  '5': "&c/ts &7- &eZeige die TS\xb3 IP an"
+  '6': '&c/shop &7- &eZeige den Shop an'
+  '7': '&c/warp <Warp> &7- &eTeleportiere dich zu einem Spielmodus'
+  '8': '&8&m----------------------'
+scoreboard:
+  title: '&6dein-server.de'
+  '1': '&0'
+  '2': '&7Teamspeak-IP&8:'
+  '3': '&ets.dein-server.de'
+  '4': '&1'
+  '5': '&7Rang&8:'
+  '6': '%rank%'
+  '7': '&2'
+  '8': '&7Coins&8:'
+  '9': '&e%coins%'
+  '10': '&3'
+joinMotd: '&3Diese Nachricht bekommt jeder Spieler beim joinen!'
